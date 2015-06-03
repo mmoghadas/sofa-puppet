@@ -1,5 +1,8 @@
 class api_key (
-  $token = hiera('api_key::token')
+  $health_url = hiera('api_key::health_url'),
+  $token = hiera('api_key::token'),
+  $service_name = hiera('service::name'),
+  $service_interval = hiera('service::interval'),
 )
 {
 
