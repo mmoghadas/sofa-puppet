@@ -3,6 +3,7 @@ class api_key (
   $token = hiera('api_key::token'),
   $service_name = hiera('service::name'),
   $service_interval = hiera('service::interval'),
+  $service_tag = hiera('service::tag'),
 )
 {
 
